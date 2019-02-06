@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.avianca.esb</groupId>
-  <artifactId>rh-av-rapid-resttoamq</artifactId>
+  <artifactId>rh-av-prueba-resttoamq</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <name>Avianca :: Integrations :: Spring-Boot :: Camel REST / AMQ</name>
@@ -22,6 +22,35 @@
     <maven-compiler-plugin.version>3.6.0</maven-compiler-plugin.version>
     <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
   </properties>
+
+<repositories>
+    <repository>
+      <id>red-hat-ga-repository</id>
+      <url>https://maven.repository.redhat.com/ga</url>
+    </repository>
+    <repository>
+      <id>red-hat-early-access-repository</id>
+      <url>https://maven.repository.redhat.com/earlyaccess/all</url>
+    </repository>
+    <repository>
+      <id>jboss-early-access-repository</id>
+      <url>https://repository.jboss.org/nexus/content/groups/ea</url>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>red-hat-ga-repository</id>
+      <url>https://maven.repository.redhat.com/ga</url>
+    </pluginRepository>
+    <pluginRepository>
+      <id>red-hat-early-access-repository</id>
+      <url>https://maven.repository.redhat.com/earlyaccess/all</url>
+    </pluginRepository>
+    <pluginRepository>
+      <id>jboss-early-access-repository</id>
+      <url>https://repository.jboss.org/nexus/content/groups/ea</url>
+    </pluginRepository>
+  </pluginRepositories> 
 
   <dependencyManagement>
     <dependencies>
